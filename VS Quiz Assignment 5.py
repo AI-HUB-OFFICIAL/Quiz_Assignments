@@ -63,7 +63,7 @@ else:
 #7. Ask the user to enter a year.
 #👉 Check whether it is a leap year or not.
 year = int(input("Enter a year: "))
-if year%4 == 0:
+if year%4 == 0 and year % 100 != 0:
     print(f"{year} is a leap year")
 else:
     print(f"{year} is not a leap year")
@@ -95,4 +95,6 @@ elif inp > 0:
     print("The number is greater than 0")
 elif inp < 100:
     print("The number is less than 100")
+else:
+    print("Incorrect input")
 
